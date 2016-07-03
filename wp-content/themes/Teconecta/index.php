@@ -1,29 +1,10 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="<?php bloginfo("charset")?>">
-        <title><?php bloginfo("name")?></title>
-        <link rel="stylesheet" href="<?php print CSS?>normalize.css">
-        <meta name="description" content="<?php bloginfo("description")?>">
-        <link rel="pingback" href="<?php bloginfo("pingback")?>">
-    </head>
-    <body>
-        <header>
-            <figure>
-                <img src="" alt="Teconecta Logo">
-            </figure>
-            <nav>
-                <!-- navegacion principal-->
-            </nav>
-            <div id="profile">
-                <!-- menu del perfil del indivudo con api de facebook-->
-            </div>
-        </header>
-        <section id="main">
-
-        </section>
-        <aside>
-            <!-- aside del sitio-->
-        </aside>
-    </body>
-</html>
+<?php get_header()?>
+    <section id="main">
+        <?php if(have_posts()):while(have_posts()):the_post();?>
+        <article><a href="<?php the_permalink()?>"><?php the_title()?></a></article>
+        <?php endwhile;else:?>
+        <?php _e("no se encontro lo que buscaba");?>
+        <?php endif?>
+    </section>
+    
+<?php get_footer()?>

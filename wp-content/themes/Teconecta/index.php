@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="<?php bloginfo("charset")?>">
         <title><?php bloginfo("name")?></title>
-        <link rel="stylesheet" href="<?php bloginfo("stylesheet_url")?>">
+        <link rel="stylesheet" href="<?php print CSS?>normalize.css">
         <meta name="description" content="<?php bloginfo("description")?>">
         <link rel="pingback" href="<?php bloginfo("pingback")?>">
     </head>
@@ -22,5 +22,8 @@
         <section id="main">
 
         </section>
+        <aside>
+            <!-- aside del sitio-->
+        </aside>
     </body>
 </html>

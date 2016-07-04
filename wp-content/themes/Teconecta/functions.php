@@ -25,4 +25,14 @@ function arphabet_widgets_init() {
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+function get_gravatar($email,$s,$d,$r)
+{
+    $url = 'https://www.gravatar.com/avatar/';
+    $url .= md5( strtolower( trim( $email ) ) );
+    $url .= "?s=$s&d=$d&r=$r";
+    return $url;
+}
+
+
 ?>

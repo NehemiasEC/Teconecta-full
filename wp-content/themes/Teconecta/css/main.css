@@ -1,0 +1,58 @@
+body
+{
+    background-color:#C6C6C6;
+}
+a
+{
+    text-decoration: none;
+}
+header nav
+{
+    padding: 0;
+    margin:0;
+    width: 50%;
+}
+header,header figure, header figure img,header nav,header nav ul
+{
+    margin: 0;
+    padding: 0;
+}
+header figure img,header figure
+{
+    width: 45px;
+}
+header nav ul
+{
+    list-style-type: none;
+    width: 100%;
+}
+header
+{
+    background-color: #036881;
+    border-bottom: 3px solid #64BC99;
+}
+header figure, header  nav ul, header div#profile, header nav ul li ,header nav, header a
+{
+    color: #E8E8E8;
+    display: inline-block;
+    vertical-align: middle;
+}
+header div#profile
+{
+    border: 1px dashed #E8E8E8;
+    height: 50px;
+    width: 150px;
+}
+section
+{
+    background-color: #EFEFEF;
+}
+span img
+{
+    border-radius: 50%;
+}
+header nav ul li
+{
+    border-left: #036881 1px;
+
+}

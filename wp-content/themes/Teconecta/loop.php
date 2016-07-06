@@ -13,3 +13,19 @@
         <?php _e("no se encontro lo que buscaba");?>
     <?php endif?>
 </section>
+
+<div class="navi">
+    <?php previous_posts_link("Anteriores")?>
+    <?php next_posts_link("siguientes")?>
+</div>
+<!-- facebok script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=196345770768046";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- finaliza el facebook script-->

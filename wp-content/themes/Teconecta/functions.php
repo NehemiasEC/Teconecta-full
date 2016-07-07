@@ -1,4 +1,8 @@
 <?php
+
+include_once ("opciones.php");
+
+
 define("TEMPPATH",get_bloginfo("stylesheet_directory"));
 define("IMAGES",TEMPPATH."/img/");
 define("CSS",TEMPPATH."/css/");
@@ -34,5 +38,7 @@ function get_gravatar($email,$s,$d,$r)
     return $url;
 }
 
+/* post thumbnail support */
 
+add_theme_support("post-thumbnails");
 ?>

@@ -1,6 +1,7 @@
 <?php get_header()?>
-yo soy el single
+
 <section id="main">
+    yo soy el single
     <?php if(have_posts()):while(have_posts()):the_post();?>
         <article>
             <h2><?php the_title()?></h2>
@@ -15,3 +16,4 @@ yo soy el single
         <?php _e("no se encontro lo que buscaba");?>
     <?php endif?>
 </section>
+<?php get_footer()?>
